@@ -58,20 +58,6 @@
         }
     }
 
-    &-svg {
-        //Spacing
-        height: 3.6rem;
-        margin: 1rem 0;
-
-        //Animations
-        transition: all 0.1s;
-
-        &:hover {
-            //Animations
-            scale: 1.1;
-        }
-    }
-
     &-info {
         h3 {
             //Spacing
