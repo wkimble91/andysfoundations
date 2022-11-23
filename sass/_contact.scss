@@ -1,0 +1,168 @@
+.contact {
+    //Parent
+    grid-row: 6 / span 1;
+    //Display
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    //Spacing
+    width: 100%;
+
+    background-color: $color-light;
+    border-top: 10px solid $color-primary-dark;
+
+    &__header {
+        //Spacing
+        padding: 8rem 0 2rem;
+        //Font Styling
+        font-size: 6rem;
+        text-align: center;
+
+        //Color Styling
+        color: $color-primary-dark;
+    }
+
+    &__container {
+        //Display
+        display: flex;
+        justify-content: space-between;
+
+        //Spacing
+        width: 60%;
+        margin: 0 5rem;
+        padding: 15vh 0;
+
+        @media only screen and (max-width: $bp-large) {
+            //Spacing
+            width: 100%;
+        }
+        @media only screen and (max-width: $bp-medium) {
+            //Display
+            flex-direction: column;
+        }
+
+        &-left {
+            //Display
+            flex: 1 1 40%;
+            display: flex;
+            flex-direction: column;
+        }
+        &-right {
+            //Display
+            flex: 1 1 60%;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+        }
+    }
+
+    &-svg {
+        //Spacing
+        height: 3.6rem;
+        margin: 1rem 0;
+
+        //Animations
+        transition: all 0.1s;
+
+        &:hover {
+            //Animations
+            scale: 1.1;
+        }
+    }
+
+    &-info {
+        h3 {
+            //Spacing
+            margin: 2rem 0 6rem;
+
+            //Font Styling
+            font-size: 3rem;
+
+            //Color Styling
+            color: $color-primary-light;
+        }
+        p {
+            //Spacing
+            margin: 0.2rem 6rem 2rem 0;
+            line-height: 4rem;
+
+            //Font Styling
+            font-size: 2rem;
+            font-weight: 300;
+
+            @media only screen and (max-width: $bp-medium) {
+                //Spacing
+                margin: 0.5rem 0 2rem;
+
+                //Font Styling
+                font-size: 1.6rem;
+            }
+        }
+    }
+
+    &-form {
+        //Display
+        display: flex;
+        flex-direction: column;
+
+        //Spacing
+        width: 50rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            //Spacing
+            width: 100%;
+        }
+
+        & label {
+            //Font Styling
+            font-size: 1.5rem;
+        }
+
+        & input {
+            //Spacing
+            padding: 0.8rem;
+            margin-bottom: 2rem;
+
+            //Border Styling
+            border: 1px solid $color-grey-dark-2;
+            border-radius: 5px;
+
+            &:focus {
+                //Border Styling
+                border: 1px solid $color-grey-dark-2;
+            }
+        }
+
+        & textarea {
+            //Spacing
+            padding: 0.8rem;
+
+            //Border Styling
+            border: 1px solid $color-grey-dark-2;
+            border-radius: 5px;
+
+            &:focus {
+                //Border Styling
+                border: 1px solid $color-grey-dark-2;
+            }
+        }
+
+        &__upload {
+            //Spacing
+            padding-left: 0rem !important;
+
+            //Border Styling
+            border: none !important;
+        }
+
+        & button {
+            //Spacing
+            margin-top: 2rem;
+
+            //Border Styling
+            border-radius: 5px;
+        }
+    }
+}

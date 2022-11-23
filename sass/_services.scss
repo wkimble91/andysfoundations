@@ -1,0 +1,46 @@
+.services {
+    //Parent
+    grid-row: 4 / span 1;
+    height: 80vh;
+    background-color: $color-light;
+    text-align: center;
+    // border-bottom: 10px solid $color-primary-dark;
+
+    &__line {
+        width: 1px;
+        height: 60%;
+        margin: auto 0;
+        background-color: $color-primary-dark;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    &__box {
+        margin: auto;
+        padding: 0 10rem;
+    }
+
+    &__icon {
+        width: 8rem;
+        height: 8rem;
+        fill: $color-primary-dark;
+    }
+
+    &__header {
+        font-size: 4rem;
+        font-weight: 400;
+        margin-bottom: 3rem;
+    }
+
+    &__description {
+        font-size: 1.6rem;
+        font-weight: 400;
+        line-height: 4rem;
+    }
+}

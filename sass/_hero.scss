@@ -1,0 +1,47 @@
+.hero {
+    //Parent
+    grid-row: 2 / span 1;
+    margin-top: 9rem;
+    display: flex;
+    justify-content: center;
+    background-image: linear-gradient(
+            to bottom,
+            rgba($color-grey-dark-1, 1) 0%,
+            rgba($color-grey-dark-1, 0.8) 20%,
+            rgba($color-grey-dark-1, 0.7) 40%,
+            rgba($color-grey-dark-1, 0.6) 60%
+        ),
+        url(../img/hero.jpg);
+    /* Create the parallax scrolling effect */
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &__left {
+        width: 40%;
+        display: flex;
+        justify-content: flex-end;
+        &-image {
+            height: 35rem;
+            width: auto;
+            margin: auto 6rem;
+        }
+    }
+    &__right {
+        width: 60%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        &-title {
+            color: $color-light;
+            font-size: 6rem;
+            font-weight: 800;
+        }
+        &-subtitle {
+            text-transform: capitalize;
+            color: $color-light;
+            font-size: 3rem;
+            font-weight: 400;
+        }
+    }
+}

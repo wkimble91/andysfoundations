@@ -1,0 +1,44 @@
+.info {
+    //Parent
+    grid-row: 3 / span 1;
+
+    height: 100%;
+    background-color: $color-primary-dark;
+    text-align: center;
+    color: white;
+
+    &__line {
+        width: 1px;
+        height: 40%;
+        margin: auto 0;
+        background-color: white;
+    }
+
+    &__container {
+        display: flex;
+        justify-content: center;
+        align-content: center;
+        margin: 0 auto;
+        height: 100%;
+    }
+
+    &__box {
+        margin: auto;
+    }
+
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        fill: white;
+    }
+
+    &__header {
+        font-size: 3rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+    }
+    &__description {
+        font-size: 1.6rem;
+        font-weight: 400;
+    }
+}

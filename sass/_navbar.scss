@@ -1,0 +1,162 @@
+.header {
+    //Parent
+    grid-row: 1 / span 1;
+
+    //Display
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    //Spacing
+    position: fixed;
+    z-index: 200;
+    width: 100%;
+    height: 9rem;
+
+    //Font Styling
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 600;
+
+    //Color Styling
+    background-color: $color-light;
+    color: $color-grey-dark-2;
+
+    //Border Styling
+    border-bottom: 10px solid $color-primary-dark;
+
+    //Animations
+    transition: all 0.2s;
+
+    &-scrolled {
+        /* This is applied when you scroll the height of the navbar */
+        //Border Styling
+        height: 6rem;
+        border-bottom: 5px solid $color-primary-dark;
+
+        .header__nav-item {
+            padding: 0.2rem 1rem;
+        }
+    }
+
+    &__nav {
+        //Display
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        &-item {
+            //Spacing
+            padding: 0.6rem 1.5rem;
+
+            //Font Styling
+            text-decoration: none;
+            font-size: 2rem;
+            font-weight: 600;
+
+            //Color Styling
+            color: $color-grey-dark-1;
+
+            //Border Styling
+            border-radius: 0.5rem;
+
+            //Animations
+            transition: all 0.1s;
+
+            &:not(:last-child) {
+                //Spacing
+                margin-right: 4rem;
+            }
+            &:hover {
+                //Color Styling
+                background-color: $color-primary-dark;
+                color: $color-light;
+            }
+        }
+        @media only screen and (max-width: $bp-small) {
+            //Display
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+
+            //Spacing
+            position: fixed;
+            width: 120%;
+            top: -50%;
+            left: -10%;
+            height: 35rem;
+            z-index: -1;
+            margin-left: 0rem;
+            padding-top: 7rem;
+
+            //Font Styling
+            text-align: center;
+            font-weight: 300;
+            font-size: 2rem;
+
+            //Color Styling
+            background-color: $color-grey-dark-1;
+            color: $color-grey-light-1;
+
+            //Border Styling
+            box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
+
+            //Animations
+            transition: 0.6s ease-out;
+
+            &.active {
+                //Spacing
+                top: 0rem;
+            }
+        }
+    }
+
+    &__hamburger {
+        //Display
+        display: none;
+
+        @media only screen and (max-width: $bp-small) {
+            cursor: pointer;
+
+            //Display
+            display: block;
+
+            //Spacing
+            margin: auto 3rem;
+            z-index: 20;
+        }
+
+        & .bar {
+            //Display
+            display: block;
+
+            //Spacing
+            width: 4rem;
+            height: 1px;
+            margin: 8px auto;
+
+            //Color Styling
+            background-color: white;
+
+            //Animations
+            transition: all 0.3s ease-in-out;
+        }
+
+        &.active {
+            & .bar:nth-child(2) {
+                //Image Styling
+                opacity: 0;
+            }
+
+            & .bar:nth-child(1) {
+                //Animations
+                transform: translateY(9px) rotate(45deg);
+            }
+
+            & .bar:nth-child(3) {
+                //Animations
+                transform: translateY(-9px) rotate(-45deg);
+            }
+        }
+    }
+}
