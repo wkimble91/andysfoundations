@@ -5,20 +5,24 @@
     text-align: center;
 
     &__header {
-        font-size: 6rem;
-        font-weight: 600;
-        text-align: center;
+        //Spacing
         padding: 8rem 0;
+        //Font Styling
+        font-size: 6rem;
+        text-align: center;
 
-        @media only screen and (max-width: $bp-small) {
-            padding: 8rem 0 2rem;
+        //Color Styling
+        color: $color-primary-dark;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 5rem;
         }
     }
 
     &__line {
         width: 1px;
         height: 60%;
-        margin: auto 0;
+        margin: auto;
         background-color: $color-primary-dark;
         @media only screen and (max-width: $bp-small) {
             height: 1px;
@@ -30,17 +34,18 @@
     &__container {
         display: flex;
         justify-content: center;
-        align-content: center;
         margin: 0 auto;
+        height: 100%;
 
         @media only screen and (max-width: $bp-small) {
             flex-direction: column;
-            margin: 2rem 0 0;
+            margin: 0;
+            height: auto;
         }
     }
 
     &__box {
-        margin: auto;
+        margin: 0 auto;
         padding: 0 10rem;
         @media only screen and (max-width: $bp-small) {
             padding: 5rem 5rem;

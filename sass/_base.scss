@@ -61,9 +61,9 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 0 80vh 20vh max-content min-content min-content;
+    grid-template-rows: 0 80vh 20vh;
     @media only screen and (max-width: $bp-small) {
-        grid-template-rows: 0 100vh max-content max-content min-content min-content;
+        grid-template-rows: 0 100vh;
     }
 }
 
