@@ -20,10 +20,17 @@
         align-content: center;
         margin: 0 auto;
         height: 100%;
+        @media only screen and (max-width: $bp-small) {
+            flex-direction: column;
+            padding: 3rem 0;
+        }
     }
 
     &__box {
         margin: auto;
+        @media only screen and (max-width: $bp-small) {
+            margin: 3rem auto;
+        }
     }
 
     &__icon {

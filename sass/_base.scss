@@ -20,8 +20,6 @@ $color-grey-dark-2: #30362f;
 <---        Breakpoints         -->
 <--- -------------------------- -*/
 
-$bp-bigscreen: 125em; //2000px
-$bp-largest: 87.5em; //1400px
 $bp-large: 75em; //1200px
 $bp-medium: 56.25em; //900px
 $bp-small: 37.5em; //600px
@@ -43,7 +41,7 @@ html {
     box-sizing: border-box;
     font-size: 62.5%; //1rem = 10px
 
-    @media only screen and (max-width: $bp-largest) {
+    @media only screen and (max-width: $bp-large) {
         font-size: 50%; //1rem = 8px
     }
 }
@@ -52,9 +50,7 @@ body {
     font-family: 'Open Sans', sans-serif;
     line-height: 1.6;
     width: 100vw;
-
-    // This prevents horizontal scrolling
-    overflow-x: hidden; // == Added by Jacob Carter (Choice-Studio) ==
+    overflow-x: hidden;
 }
 
 /*-- -------------------------- -->
@@ -65,7 +61,10 @@ body {
     background-color: white;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 0 80vh 20vh min-content min-content min-content;
+    grid-template-rows: 0 80vh 20vh max-content min-content min-content;
+    @media only screen and (max-width: $bp-small) {
+        grid-template-rows: 0 100vh max-content max-content min-content min-content;
+    }
 }
 
 /*-- -------------------------- -->

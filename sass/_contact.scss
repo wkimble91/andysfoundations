@@ -22,6 +22,10 @@
 
         //Color Styling
         color: $color-primary-dark;
+
+        @media only screen and (max-width: $bp-smallest) {
+            font-size: 5rem;
+        }
     }
 
     &__container {
@@ -36,11 +40,12 @@
 
         @media only screen and (max-width: $bp-large) {
             //Spacing
-            width: 100%;
+            width: 90%;
         }
         @media only screen and (max-width: $bp-medium) {
             //Display
             flex-direction: column;
+            padding: 5vh 0;
         }
 
         &-left {
@@ -68,6 +73,13 @@
 
             //Color Styling
             color: $color-primary-light;
+            @media only screen and (max-width: $bp-smallest) {
+                //Spacing
+                margin: 2rem 0 2rem;
+
+                //Font Styling
+                font-size: 2.2rem;
+            }
         }
         p {
             //Spacing
@@ -84,6 +96,9 @@
 
                 //Font Styling
                 font-size: 1.6rem;
+            }
+            @media only screen and (max-width: $bp-smallest) {
+                font-size: 1.4rem;
             }
         }
     }
