@@ -25,6 +25,9 @@
         width: 40%;
         display: flex;
         justify-content: flex-end;
+        @media only screen and (max-width: $bp-medium) {
+            width: 35%;
+        }
         @media only screen and (max-width: $bp-small) {
             width: 90%;
             justify-content: center;
@@ -38,7 +41,6 @@
             }
             @media only screen and (max-width: $bp-small) {
                 height: 25rem;
-                margin-top: 10rem;
             }
             @media only screen and (max-width: $bp-smallest) {
                 height: 15rem;
@@ -50,6 +52,9 @@
         display: flex;
         flex-direction: column;
         justify-content: center;
+        @media only screen and (max-width: $bp-medium) {
+            width: 65%;
+        }
         @media only screen and (max-width: $bp-small) {
             width: 90%;
             text-align: center;
