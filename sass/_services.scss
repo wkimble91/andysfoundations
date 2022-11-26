@@ -20,10 +20,11 @@
     }
 
     &__line {
-        width: 1px;
+        width: 2px;
         height: 60%;
-        margin: auto;
+        margin: auto 0;
         background-color: $color-primary-dark;
+        border: none;
         @media only screen and (max-width: $bp-small) {
             height: 1px;
             width: 60%;

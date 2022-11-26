@@ -1,3 +1,5 @@
+// Handles Mobile Hamburger Menu
+
 const hamburger = document.querySelector('.header__hamburger');
 const navMenu = document.querySelector('.header__nav');
 const navLink = document.querySelectorAll('.header__nav-item');
@@ -15,3 +17,15 @@ function closeMenu() {
     hamburger.classList.remove('active');
     navMenu.classList.remove('active');
 }
+
+// Applies scrolled class
+
+$(function () {
+    $(document).scroll(function () {
+        var $nav = $('#header');
+        $nav.toggleClass(
+            'header-scrolled',
+            $(this).scrollTop() > $nav.height()
+        );
+    });
+});
