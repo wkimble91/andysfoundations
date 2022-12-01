@@ -1,45 +1,151 @@
 .about {
     //Parent
     grid-row: 5 / span 1;
-    padding: 20rem 0 20rem;
 
-    background-image: linear-gradient(
-            to bottom,
-            rgba($color-light, 1) 0%,
-            rgba($color-light, 0.6) 40%,
-            rgba($color-light, 0.6) 100%
-        ),
-        url(../img/concrete.jpg);
+    //Spacing
+    padding-top: 7rem;
+
+    &__image {
+        //Image Styling
+        background-image: linear-gradient(
+                to bottom,
+                rgba($color-light, 0.7) 0%,
+                rgba($color-light, 0.8) 100%
+            ),
+            url(../img/concrete.jpg);
+    }
 
     &__box {
-        width: 60%;
+        //Spacing
+        width: 70%;
         margin: 0 auto;
+        padding: 8rem 0 14rem;
+
         @media only screen and (max-width: $bp-small) {
+            //Spacing
             width: 80%;
         }
         @media only screen and (max-width: $bp-smallest) {
+            //Spacing
             width: 89%;
         }
     }
 
+    &__line {
+        //Spacing
+        height: 2px;
+        width: 30%;
+        margin: 0;
+
+        //Color Styling
+        background-color: $color-primary-dark;
+
+        //Border Styling
+        border: none;
+    }
+
     &__header {
         //Spacing
-        padding: 8rem 0;
+        padding: 2rem 0;
+
         //Font Styling
         font-size: 6rem;
         text-align: center;
 
         //Color Styling
-        color: $color-primary-dark;
+        background-color: $color-primary-dark;
+        color: white;
 
         @media only screen and (max-width: $bp-smallest) {
+            //Font Styling
             font-size: 5rem;
         }
     }
+
+    &__subheader {
+        //Spacing
+        padding: 6rem 0 2rem;
+        margin: 0 auto;
+
+        //Font Styling
+        text-align: center;
+        font-size: 3.5rem;
+        font-weight: 800;
+        line-height: 5rem;
+
+        //Color Styling
+        color: $color-grey-dark-1;
+    }
     &__description {
-        font-size: 2rem;
+        //Spacing
+        margin: 0 auto;
+        width: 60%;
+
+        //Font Styling
+        text-align: center;
+        font-size: 2.2rem;
         font-weight: 400;
         line-height: 5rem;
-        text-indent: 4rem;
+
+        @media only screen and (max-width: $bp-medium) {
+            //Spacing
+            width: 80%;
+
+            //Font Styling
+            font-size: 1.8rem;
+        }
+        @media only screen and (max-width: $bp-small) {
+            //Spacing
+            width: 90%;
+        }
+    }
+
+    &__member {
+        &-name {
+            //Spacing
+
+            //Font Styling
+            font-size: 3.2rem;
+            text-align: left;
+            font-weight: 800;
+
+            //Color Styling
+            color: $color-primary-dark;
+        }
+        &-position {
+            //Font Styling
+            font-size: 1.7rem;
+            text-align: left;
+            font-weight: 600;
+
+            //Color Styling
+            color: $color-grey-dark-1;
+        }
+        &-email {
+            //Spacing
+            padding: 0.5rem 0 1rem;
+
+            //Font Styling
+            font-size: 1.4rem;
+            text-align: left;
+            font-weight: 600;
+
+            //Color Styling
+            color: $color-grey-dark-2;
+        }
+        &-description {
+            //Spacing
+            margin: 1rem 0 4rem;
+
+            //Font Styling
+            font-size: 1.8rem;
+            line-height: 5rem;
+            text-indent: 3rem;
+
+            @media only screen and (max-width: $bp-small) {
+                //Font Styling
+                line-height: 4rem;
+            }
+        }
     }
 }

@@ -1,5 +1,6 @@
 .contact {
     //Parent
+
     grid-row: 6 / span 1;
     //Display
     display: flex;
@@ -10,12 +11,16 @@
     //Spacing
     width: 100%;
 
+    //Color Styling
     background-color: $color-light;
+
+    //Border Styling
     border-top: 10px solid $color-primary-dark;
 
     &__header {
         //Spacing
         padding: 8rem 0 2rem;
+
         //Font Styling
         font-size: 6rem;
         text-align: center;
@@ -24,6 +29,7 @@
         color: $color-primary-dark;
 
         @media only screen and (max-width: $bp-smallest) {
+            //Font Styling
             font-size: 5rem;
         }
     }
@@ -73,6 +79,7 @@
 
             //Color Styling
             color: $color-primary-light;
+
             @media only screen and (max-width: $bp-smallest) {
                 //Spacing
                 margin: 2rem 0 2rem;
@@ -98,6 +105,7 @@
                 font-size: 1.6rem;
             }
             @media only screen and (max-width: $bp-smallest) {
+                //Font Styling
                 font-size: 1.4rem;
             }
         }

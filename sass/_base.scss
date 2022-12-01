@@ -58,7 +58,7 @@ body {
 <--- -------------------------- -*/
 
 .container {
-    background-color: white;
+    background-color: $color-light;
     display: grid;
     grid-template-columns: 100%;
     grid-template-rows: 0 80vh 20vh;
@@ -72,7 +72,7 @@ body {
 <--- -------------------------- -*/
 
 ::selection {
-    background-color: $color-primary-dark;
+    background-color: $color-primary-light;
     color: #fff;
 }
 

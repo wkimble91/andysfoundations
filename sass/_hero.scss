@@ -2,10 +2,17 @@
     //Parent
     grid-row: 2 / span 1;
 
-    margin-top: 9rem;
+    //Display
     display: flex;
     justify-content: center;
+
+    //Spacing
+    margin-top: 9rem;
+
+    //Color Styling
     background-color: $color-primary-dark;
+
+    //Image Styling
     background-image: linear-gradient(
             to bottom,
             rgba($color-grey-dark-1, 1) 0%,
@@ -14,78 +21,119 @@
             rgba($color-grey-dark-1, 0.6) 60%
         ),
         url(../img/hero.jpg);
-    /* Create the parallax scrolling effect */
+
+    /* Parallax scrolling effect */
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
     @media only screen and (max-width: $bp-small) {
-        margin-top: 0;
-        background-size: auto 110vh;
+        //Display
         flex-direction: column;
         align-items: center;
+
+        //Spacing
+        margin-top: 0;
+
+        //Image Styling
+        background-size: auto 110vh;
     }
     &__left {
-        width: 40%;
+        //Display
         display: flex;
         justify-content: flex-end;
+
+        //Spacing
+        width: 40%;
+
         @media only screen and (max-width: $bp-medium) {
+            //Spacing
             width: 35%;
         }
         @media only screen and (max-width: $bp-small) {
-            width: 90%;
+            //Display
             justify-content: center;
+
+            //Spacing
+            width: 90%;
         }
         &-image {
+            //Spacing
             height: 35rem;
             width: auto;
             margin: auto 6rem;
+
             @media only screen and (max-width: $bp-medium) {
+                //Spacing
                 height: 30rem;
             }
             @media only screen and (max-width: $bp-small) {
+                //Spacing
                 height: 25rem;
             }
             @media only screen and (max-width: $bp-smallest) {
+                //Spacing
                 height: 15rem;
             }
         }
     }
     &__right {
-        width: 60%;
+        //Display
         display: flex;
         flex-direction: column;
         justify-content: center;
+
+        //Spacing
+        width: 60%;
+
         @media only screen and (max-width: $bp-medium) {
+            //Spacing
             width: 65%;
         }
         @media only screen and (max-width: $bp-small) {
+            //Spacing
             width: 90%;
+
+            //Font Styling
             text-align: center;
         }
         &-title {
-            color: $color-light;
+            //Font Styling
             font-size: 6rem;
             font-weight: 800;
+
+            //Color Styling
+            color: $color-light;
+
             @media only screen and (max-width: $bp-medium) {
+                //Font Styling
                 font-size: 4.6rem;
             }
             @media only screen and (max-width: $bp-small) {
+                //Font Styling
                 font-size: 4rem;
             }
             @media only screen and (max-width: $bp-smallest) {
+                //Font Styling
                 font-size: 3.2rem;
             }
         }
         &-subtitle {
+            //Font Styling
             text-transform: capitalize;
-            color: $color-light;
             font-size: 3rem;
             font-weight: 400;
+
+            //Color Styling
+            color: $color-light;
+
             @media only screen and (max-width: $bp-medium) {
+                //Font Styling
                 font-size: 2.8rem;
             }
             @media only screen and (max-width: $bp-smallest) {
+                //Font Styling
                 font-size: 2rem;
             }
         }

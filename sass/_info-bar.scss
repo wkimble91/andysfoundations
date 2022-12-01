@@ -2,56 +2,90 @@
     //Parent
     grid-row: 3 / span 1;
 
+    //Spacing
     height: 100%;
-    background-color: $color-primary-dark;
+
+    //Font Styling
     text-align: center;
+
+    //Color Styling
+    background-color: $color-primary-dark;
     color: white;
 
     &__line {
+        //Spacing
         width: 1px;
         height: 40%;
         margin: auto 0;
+
+        //Color Styling
         background-color: white;
+
+        //Border Styling
         border: none;
+
         @media only screen and (max-width: $bp-small) {
-            width: 40%;
+            //Spacing
+            width: 50%;
             height: 1px;
             margin: 0 auto;
         }
     }
 
     &__container {
+        //Display
         display: flex;
         justify-content: center;
         align-content: center;
+
+        //Spacing
         margin: 0 auto;
         height: 100%;
+
         @media only screen and (max-width: $bp-small) {
+            //Display
             flex-direction: column;
-            padding: 3rem 0;
+
+            //Spacing
+            padding: 1rem 0;
         }
     }
 
     &__box {
+        //Spacing
+        width: 33%;
         margin: auto;
+
         @media only screen and (max-width: $bp-small) {
+            //Spacing
             margin: 3rem auto;
+            width: 100%;
         }
     }
 
     &__icon {
+        //Spacing
         width: 3rem;
         height: 3rem;
+
+        //Color Styling
         fill: white;
     }
 
     &__header {
+        //Spacing
+        margin-bottom: 1rem;
+
+        //Font Styling
         font-size: 3rem;
         font-weight: 400;
-        margin-bottom: 1rem;
     }
     &__description {
-        font-size: 1.6rem;
+        //Spacing
+        padding: 0 30%;
+
+        //Font Styling
+        font-size: 1.4rem;
         font-weight: 400;
     }
 }

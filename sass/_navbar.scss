@@ -55,6 +55,7 @@
         align-items: center;
 
         @media only screen and (max-width: $bp-medium) {
+            //Spacing
             margin: 0 2rem;
         }
 
@@ -77,13 +78,16 @@
             transition: all 0.1s;
 
             @media only screen and (max-width: $bp-small) {
+                //Spacing
                 padding: 2rem 30%;
             }
 
             &:not(:last-child) {
                 //Spacing
                 margin-right: 4rem;
+
                 @media only screen and (max-width: $bp-small) {
+                    //Spacing
                     margin-right: 0rem;
                 }
             }
@@ -120,7 +124,6 @@
 
             //Border Styling
             box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
-            //Border Styling
             border-bottom: 10px solid $color-primary-dark;
 
             //Animations
