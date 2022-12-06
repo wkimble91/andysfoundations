@@ -71,7 +71,7 @@
 
     &__box {
         //Spacing
-        margin: 0 auto 20rem;
+        margin: 0 auto 8rem;
         width: 30%;
 
         @media only screen and (max-width: $bp-large) {
@@ -92,8 +92,8 @@
 
         &-icon {
             //Spacing
-            width: 8rem;
-            height: 8rem;
+            width: 10rem;
+            height: 10rem;
 
             //Color Styling
             fill: $color-primary-dark;
@@ -101,18 +101,18 @@
 
         &-header {
             //Spacing
-            margin-bottom: 5rem;
+            margin-bottom: 3rem;
 
             //Font Styling
             font-size: 4.6rem;
-            font-weight: 400;
+            font-weight: 600;
         }
 
         &-description {
             //Font Styling
             font-size: 1.6rem;
             font-weight: 400;
-            line-height: 5rem;
+            line-height: 4.5rem;
         }
     }
 }

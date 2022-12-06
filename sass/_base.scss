@@ -61,7 +61,7 @@ body {
     background-color: $color-light;
     display: grid;
     grid-template-columns: 100%;
-    grid-template-rows: 0 80vh 20vh;
+    grid-template-rows: 0 75vh 25vh;
     @media only screen and (max-width: $bp-small) {
         grid-template-rows: 0 100vh;
     }

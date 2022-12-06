@@ -19,7 +19,7 @@
         justify-content: space-around;
 
         //Spacing
-        margin: 12rem 0 15rem;
+        margin: 12rem 0;
         line-height: 4rem;
 
         //Font Styling
@@ -71,12 +71,6 @@
                 //Spacing
                 margin-right: 1.4rem;
             }
-        }
-
-        &-left,
-        &-center {
-            //Spacing
-            margin-bottom: 4rem;
         }
     }
     &__bottom {

@@ -10,7 +10,7 @@
         background-image: linear-gradient(
                 to bottom,
                 rgba($color-light, 0.7) 0%,
-                rgba($color-light, 0.8) 100%
+                rgba($color-light, 0.7) 100%
             ),
             url(../img/concrete.jpg);
     }
@@ -33,9 +33,9 @@
 
     &__line {
         //Spacing
-        height: 2px;
-        width: 30%;
-        margin: 0;
+        height: 3px;
+        width: 25%;
+        margin: 2rem auto;
 
         //Color Styling
         background-color: $color-primary-dark;
@@ -64,7 +64,7 @@
 
     &__subheader {
         //Spacing
-        padding: 6rem 0 2rem;
+        padding-top: 6rem;
         margin: 0 auto;
 
         //Font Styling
@@ -133,13 +133,25 @@
             //Color Styling
             color: $color-grey-dark-2;
         }
+        &-line {
+            //Spacing
+            height: 2px;
+            width: 30%;
+            margin: 0;
+
+            //Color Styling
+            background-color: $color-primary-dark;
+
+            //Border Styling
+            border: none;
+        }
         &-description {
             //Spacing
             margin: 1rem 0 4rem;
 
             //Font Styling
             font-size: 1.8rem;
-            line-height: 5rem;
+            line-height: 4.2rem;
             text-indent: 3rem;
 
             @media only screen and (max-width: $bp-small) {
