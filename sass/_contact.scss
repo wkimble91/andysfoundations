@@ -19,7 +19,7 @@
 
     &__header {
         //Spacing
-        padding: 8rem 0 2rem;
+        padding: 6rem 0 0;
 
         //Font Styling
         font-size: 6rem;
@@ -42,7 +42,7 @@
         //Spacing
         width: 60%;
         margin: 0 5rem;
-        padding: 15vh 0;
+        padding: 8rem 0 10rem;
 
         @media only screen and (max-width: $bp-large) {
             //Spacing
@@ -172,6 +172,14 @@
 
             //Border Styling
             border-radius: 5px;
+
+            &:hover {
+                //Border Styling
+                box-shadow: 0 1rem 1.5rem rgba(0, 0, 0, 0.2);
+
+                //Animations
+                transform: translateY(-0.2rem);
+            }
         }
     }
 

@@ -9,8 +9,8 @@
         //Image Styling
         background-image: linear-gradient(
                 to bottom,
-                rgba($color-light, 0.7) 0%,
-                rgba($color-light, 0.7) 100%
+                rgba($color-light, 0.6) 0%,
+                rgba($color-light, 0.6) 100%
             ),
             url(../img/concrete.jpg);
     }
@@ -105,25 +105,26 @@
             //Spacing
 
             //Font Styling
-            font-size: 3.2rem;
+            font-size: 3.4rem;
             text-align: left;
             font-weight: 800;
+            line-height: 4.6rem;
 
             //Color Styling
             color: $color-primary-dark;
         }
         &-position {
             //Font Styling
-            font-size: 1.7rem;
+            font-size: 1.8rem;
             text-align: left;
             font-weight: 600;
 
             //Color Styling
-            color: $color-grey-dark-1;
+            color: black;
         }
         &-email {
             //Spacing
-            padding: 0.5rem 0 1rem;
+            padding: 0.2rem 0 1rem;
 
             //Font Styling
             font-size: 1.4rem;
@@ -147,7 +148,7 @@
         }
         &-description {
             //Spacing
-            margin: 1rem 0 4rem;
+            margin: 1rem 0 5rem;
 
             //Font Styling
             font-size: 1.8rem;
