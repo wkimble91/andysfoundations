@@ -2,7 +2,7 @@
 <---          Contact           -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
-@media only screen and (min-width: 0em) { :root { /* 13px - 16px */ --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem); /* 31px - 49px */ --headerFontSize: clamp(1.9375rem, 4.5vw, 3.0625rem); --bodyFontSize: 16/16rem; /* 60px - 100px top and bottom */ --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem; }
+@media only screen and (min-width: 0em) { :root { /* 13px - 16px */ --topperFontSize: clamp(0.8125rem, 1.6vw, 1rem); /* 31px - 49px */ --headerFontSize: clamp(1.8rem, 4.5vw, 3rem); --bodyFontSize: 16/16rem; /* 60px - 100px top and bottom */ --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem; }
   #contact { font-family: 'Roboto', 'Arial', sans-serif; padding: var(--sectionPadding); }
   #contact .contact__container { width: 100%; /* changes to 1280px at desktop */ max-width: 50rem; margin: auto; }
   #contact .contact__content { width: 100%; }
