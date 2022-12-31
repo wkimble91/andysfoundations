@@ -1,0 +1,315 @@
+---
+layout: 'base.html'
+canonical: 'https://www.andysfoundations.com'
+description: "Landing page for Andy's Foundations website"
+metaTitle: "Andy's Foundations LLC"
+tagTitle: "Andy's Foundations LLC | Shawnee, KS"
+permalink: '/'
+---
+
+<!-- 
+This is to pre load any image above the fold (hero section background).
+-->
+
+{% block preload %}
+<link rel="preload" as="image" href="/assets/images/landing.jpg">
+{% endblock %}
+
+{% block pageCSS %}
+<link rel="stylesheet" href="/css/critical.css">
+<link rel="stylesheet" href="/css/local.css">
+
+<!--Defer loading the whole page css-->
+<link rel="stylesheet" href="/css/local.css" media="print" onload="this.media='all'; this.onload=null;">
+{% endblock %}
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    Hero                      -->
+<!-- ============================================ -->
+
+<section id="hero" class="hero">
+    <div class="hero__container">
+        <div class="hero__flex-group">
+            <span class="hero__topper">Foundations you can trust</span>
+            <h1 class="hero__title">Andy's Foundations</h1>
+            <p class="hero__text">
+                Proudly Serving Kansas City Metro For Decades
+            </p>
+            <a href="" class="hero__button-solid">Contact Us</a>
+        </div>
+    </div>
+
+    <!-- Background Image -->
+    <picture class="hero__picture" aria-hidden="true">
+        <source media="(max-width: 600px)" srcset="/assets/images/landing-m.webp">
+        <source media="(min-width: 601px)" srcset="/assets/images/landing.jpg">
+        <img loading="lazy" decoding="async" src="/assets/images/landing.jpg" alt="mountains" width="2250"
+            height="1500">
+    </picture>
+</section>
+
+
+<!-- ============================================ -->
+<!--                  Info Bar                    -->
+<!-- ============================================ -->
+
+<section id="services" class="services">
+    <!-- Get Icons From flaticon.com -->
+    <div class="services__card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="assets/images/marker.svg" alt="marker" width="48" height="48"
+                fill="white">
+        </picture>
+        <h2>Locally Owned</h2>
+        <p>
+            Born and raised in Shawnee, KS
+        </p>
+    </div>
+    <div class="services__card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="assets/images/calendar.svg" alt="calendar" width="48"
+                height="48" fill="white">
+        </picture>
+        <h2>Experienced</h2>
+        <p>
+            Over 120 years combined experience
+        </p>
+    </div>
+    <div class="services__card">
+        <picture>
+            <img aria-hidden="true" decoding="async" src="assets/images/dollar.svg" alt="dollar" width="48" height="48">
+        </picture>
+        <h2>Affordable</h2>
+        <p>
+            Affordable costs, professional quality
+        </p>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--               Top Side By Side               -->
+<!-- ============================================ -->
+<!--                   About Us                   -->
+<!-- ============================================ -->
+
+<section id="sbs-top" class="sbs-top">
+    <div class="sbs-top__container">
+        <!-- Left Image Section -->
+        <div class="sbs-top__left">
+            <picture class="sbs-top__picture sbs-top__picture-1" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/workers-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/workers.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/workers.jpg" alt="house" width="522"
+                    height="581">
+            </picture>
+            <picture class="sbs-top__picture sbs-top__picture-2" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/foundation.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/foundation.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/foundation.jpg" alt="house" width="414"
+                    height="400">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="sbs-top__right">
+            <span class="sbs-top__topper">About Us</span>
+            <h2 class="sbs-top__title">About Andy's Foundations</h2>
+            <p class="sbs-top__text">
+                Since our inception we've been serving the greater Kansas City Metro area. With a combined total of over
+                120 years experience among our senior staff, we have what it takes to get your project done. To see what
+                we can do for you and your property, call or email us today.
+            </p>
+            <a href="/about" class="button-solid">About Our Team</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Bottom Side By Side              -->
+<!-- ============================================ -->
+<!--                   Services                   -->
+<!-- ============================================ -->
+
+<section id="sbs-bot" class="sbs-bot">
+    <div class="sbs-bot__container">
+        <!-- Left Image Section -->
+        <div class="sbs-bot__left">
+            <picture class="sbs-bot__picture sbs-bot__picture-1" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/foundation.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/foundation.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/foundation.jpg" alt="house" width="414"
+                    height="400">
+            </picture>
+            <picture class="sbs-bot__picture sbs-bot__picture-2" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/workers-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/workers.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/workers.jpg" alt="house" width="522"
+                    height="581">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="sbs-bot__right">
+            <span class="sbs-bot__topper">Services</span>
+            <h2 class="sbs-bot__title">Residential and Commercial</h2>
+            <p class="sbs-bot__text">
+                Do you need a foundation laid for your new dream home? Andy's Foundations is here to see
+                your project through. We will be there for each step: from the initial preparation
+                of the site up to adding the final curing compound at a cost that your wallet can handle. We
+                take pride in our work and we want you to take pride in your new home.
+            </p>
+            <p class="sbs-bot__text">
+                Commercial projects come with a host of responsibilities and
+                require a high level of dedication. Andy has the knowledge and experience necessary to
+                tackle your commercial project head-on. When it comes to building foundations for a
+                massive complex or a smaller Mom and Pop store, we will provide you with quality workmanship that is
+                on-time and to your satisfaction.
+            </p>
+            <a href="" class="button-solid">Get an estimate</a>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--                   Gallery                    -->
+<!-- ============================================ -->
+
+<!-- <section id="gallery" class="gallery">
+    <div class="gallery__container">
+        <span class="gallery__topper">Portfolio</span>
+        <h2 class="gallery__title">Images From Our Sites</h2>
+        <div class="gallery__image-group">
+            <div class="gallery__row">
+                <!-- Row 1-->
+                <!-- <picture class="gallery__picture gallery__picture-1">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port1-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port1.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port1.jpg" alt="new hallway" width="420"
+                        height="567">
+                </picture>
+                <picture class="gallery__picture gallery__picture-2">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port4-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port4.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port4.jpg" alt="new home construction"
+                        width="420" height="630">
+                </picture>
+                <picture class="gallery__picture gallery__picture-3">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port7-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port7.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port7.jpg" alt="building a new wall"
+                        width="420" height="512">
+                </picture> -->
+                <!-- To add more images, copy and paste this row's picture tags here in order from gallery__picture-1 to gallery__picture-3 and they will maintain the same layout-->
+            <!-- </div> -->
+            <!-- Row 2 -->
+            <!-- <div class="gallery__row">
+                <picture class="gallery__picture gallery__picture-4">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port2-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port2.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port2.jpg" alt="new kitchen" width="420"
+                        height="492">
+                </picture>
+                <picture class="gallery__picture gallery__picture-5">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port5-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port5.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port5.jpg" alt="apartment addition"
+                        width="420" height="517">
+                </picture>
+                <picture class="gallery__picture gallery__picture-6">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port8-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port8.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port8.jpg" alt="kew kitchen cabinets"
+                        width="420" height="629">
+                </picture>
+                <!-- To add more images, copy and paste this row's picture tags here in order from gallery__picture-1 to gallery__picture-3 and they will maintain the same layout-->
+            <!-- </div> -->
+            <!-- Row 3 -->
+            <!-- <div class="gallery__row">
+                <picture class="gallery__picture gallery__picture-7">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port3-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port3.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port3.jpg"
+                        alt="new black window structure" width="420" height="625">
+                </picture>
+                <picture class="gallery__picture gallery__picture-8">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port6-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port6.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port6.jpg" alt="kitchen rebovation"
+                        width="420" height="452">
+                </picture>
+                <picture class="gallery__picture gallery__picture-9">
+                    <source media="(max-width: 600px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port9-m.jpg">
+                    <source media="(min-width: 601px)"
+                        srcset="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port9.jpg">
+                    <img loading="lazy" decoding="async"
+                        src="https://csimg.nyc3.digitaloceanspaces.com/Gallery/port9.jpg" alt="bathroom renovation"
+                        width="420" height="629">
+                </picture> -->
+                <!-- To add more images, copy and paste this row's picture tags here in order from gallery__picture-1 to gallery__picture-3 and they will maintain the same layout-->
+            <!-- </div>
+        </div>
+        <a href="/projects" class="button-solid">View Full Gallery</a>
+    </div>
+</section>  -->
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta" class="cta">
+    <div class="cta__container">
+        <h2 class="cta__title">Get It Done <br> With Us Today</h2>
+        <p class="cta__desc">
+            Looking to begin your new home or business?<br>Get started on the right foot and reach out!
+        </p>
+        <a href="/contact" class="button-solid">Get an Estimate Now</a>
+    </div>
+    <picture class="cta__background">
+        <source media="(max-width: 600px)" srcset="assets/images/landing-m.webp">
+        <source media="(min-width: 601px)" srcset="assets/images/landing.jpg">
+        <img aria-hidden="true" loading="lazy" decoding="async" src="assets/images/landing.jpg" alt="kitchen cabinets"
+            width="1920" height="1280">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--                   Scripts                    -->
+<!-- ============================================ -->
+
+<script src="https://identity.netlify.com/v1/netlify-identity-widget.js"></script>
+<script>
+    if (window.netlifyIdentity) {
+        window.netlifyIdentity.on("init", user => {
+            if (!user) {
+                window.netlifyIdentity.on("login", () => {
+                    document.location.href="/admin/";
+                });
+            }
+        });
+    }
+</script>

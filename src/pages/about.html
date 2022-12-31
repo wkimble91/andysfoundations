@@ -1,0 +1,106 @@
+---
+layout: 'base.html'
+description: "About us page for Andy's Foundations"
+metaTitle: "Andy's Foundations LLC"
+tagTitle: "Andy's Foundations LLC | About Us"
+permalink: 'about/'
+---
+
+{% block preload %}
+<link rel="preload" as="image" href="/assets/images/cabinets2-m.jpg">
+{% endblock %}
+
+{% block pageCSS %}
+<link rel="stylesheet" href="/css/about.css">
+{% endblock %}
+
+<!-- Enter html code below -->
+
+<!-- ============================================ -->
+<!--                    LANDING                   -->
+<!-- ============================================ -->
+
+<section id="int-hero">
+    <h1 id="home-h">About Us</h1>
+    <picture>
+        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg" alt="cabinets" width="400"
+            height="662">
+    </picture>
+</section>
+
+<!-- ============================================ -->
+<!--              About Side By Side              -->
+<!-- ============================================ -->
+
+<section id="about" class="about">
+    <div class="about__container">
+        <!-- Left Image Section -->
+        <div class="about__left">
+            <picture class="about__picture about__picture-1" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/foundation-m.webp">
+                <source media="(min-width: 601px)" srcset="/assets/images/foundation.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/foundation.jpg" alt="house" width="522"
+                    height="581">
+            </picture>
+            <picture class="about__picture about__picture-2" aria-hidden="true">
+                <source media="(max-width: 600px)" srcset="/assets/images/workers.jpg">
+                <source media="(min-width: 601px)" srcset="/assets/images/workers.jpg">
+                <img loading="lazy" decoding="async" src="/assets/images/workers.jpg" alt="house" width="414"
+                    height="400">
+            </picture>
+        </div>
+        <!-- Right Content Section-->
+        <div class="about__right">
+            <h2 class="about__title">Our Staff</h2>
+            <h3 class="about__name">Andy Downey</h3>
+            <span class="about__desc">Owner</span>
+            <a href="mailto:andy@downeyfoundation.com" class="about__email">andy@downeyfoundation.com</a>
+            <p class="about__text">
+                Andy began his career in the concrete construction industry as a teen working for his father, William
+                Downey, the founder of Downey Foundation Inc., located in the Shawnee/Merriam KS area. At the time of
+                his father's retirement in 1985, Andy was named President and ran his father's business for many years.
+                Andy began his own concrete construction business known as Andy's Foundations LLC in 2018. The four
+                longest-tenured employees at Andy's Foundations LLC began their careers with Downey Foundation Inc. and
+                have a combined 120 years of experience in the industry.
+            </p>
+            <h3 class="about__name">Roger Downey</h3>
+            <span class="about__desc">Foreman</span>
+            <p class="about__text">
+                Roger also began his career in the family business of concrete construction as a teen at Downey
+                Foundation Inc. At the time of the corporation's leadership change, Roger was promoted as Foreman of the
+                construction crew and has been highly instrumental in the quality work that Downey Foundation Inc. and
+                Andy's Foundations LLC have generated over the past few decades.
+            </p>
+            <h3 class="about__name">Debra Kimble</h3>
+            <span class="about__desc">Office Manager</span>
+            <a href="mailto:debra@downeyfoundation.com" class="about__email">debra@downeyfoundation.com</a>
+            <p class="about__text">
+                Debra has been our office manager and bookkeeper since 2013. Feel free to contact her with any questions
+                regarding services offered, plan submissions, etc. Debra can be contacted by email or by phone at
+                913-962-6644.
+            </p>
+        </div>
+    </div>
+</section>
+
+<!-- ============================================ -->
+<!--             Final Call to Action             -->
+<!-- ============================================ -->
+
+<section id="cta" class="cta">
+    <div class="cta__container">
+        <h2 class="cta__title">Get It Done <br> With Us Today</h2>
+        <p class="cta__desc">
+            Looking to begin your new home or business?<br>Get started on the right foot and reach out!
+        </p>
+        <a href="/contact.html" class="button-solid">Free Estimate</a>
+    </div>
+    <picture class="cta__background">
+        <source media="(max-width: 600px)" srcset="/assets/images/cabinets2-m.jpg">
+        <source media="(min-width: 601px)" srcset="/assets/images/cabinets2.jpg">
+        <img aria-hidden="true" decoding="async" src="/assets/images/cabinets2.jpg"
+            alt="kitchen cabinets" width="1920" height="1280">
+    </picture>
+</section>
