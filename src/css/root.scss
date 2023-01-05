@@ -115,6 +115,11 @@
         }
     }
 
+    ::selection {
+        background-color: var(--primary);
+        color: #fff;
+    }
+
     // Buttons
     .button-solid {
         font-size: 1rem;
