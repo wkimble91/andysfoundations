@@ -1,10 +1,11 @@
 # Andy's Foundations
 ==================================================
 
- Local construction companies website, built on [SCSS] and [Vanilla Javascript].
+ Local construction companies website, built on [SCSS], [JS], and [Eleventy] for future dynamic blog posts.
 
 [SCSS]: https://sass-lang.com/documentation/syntax
-[Vanilla Javascript]: https://www.javascript.com/
+[JS]: https://www.javascript.com/
+[Eleventy]: https://www.11ty.dev/
 
 ## Getting Started
 
