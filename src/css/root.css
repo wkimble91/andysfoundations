@@ -142,7 +142,7 @@ font-display: swap; }
   .footer__right-section--lists ul h2 { color: #fff; font-size: 1.1rem; line-height: 1.1em; margin-bottom: 2.3rem; text-transform: uppercase; font-weight: bold; position: relative; }
   .footer__right-section--lists ul h2:before { content: ''; position: absolute; display: block; height: 0.1rem; width: 6rem; background: var(--primary); opacity: 1; bottom: -1rem; left: 0; }
   .footer__credit { color: #fff; width: 96%; margin: auto; text-align: center; margin-top: 6.25rem; line-height: 2.25rem; font-size: 1rem; }
-  .footer__credit a { color: var(--primary); text-decoration: none; font-size: 1rem; }
+  .footer__credit a { color: var(--primaryShade); text-decoration: none; font-size: 1.1rem; }
   .footer__credit a:hover { text-decoration: underline; }
   .footer__credit--copyright { display: block; font-size: 1rem; } }
 /* Small Desktop */
