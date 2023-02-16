@@ -827,7 +827,7 @@
                 display: inline-block;
                 margin: auto;
                 width: auto;
-                height: 6.25em;
+                height: 5.5em;
                 margin-bottom: 3.2em;
                 text-align: center;
 
@@ -972,6 +972,10 @@
                 margin-left: 0;
                 width: 30rem;
                 margin-bottom: 3.75rem;
+
+                img {
+                    height: 130%;
+                }
             }
 
             p {
