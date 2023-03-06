@@ -67,6 +67,23 @@
             max-width: 34rem;
         }
 
+        &__owner {
+            display: flex;
+
+            &-info {
+                margin: auto 2rem 0 0;
+            }
+            &-image {
+                border-radius: 1.5em;
+                background-color: #fff;
+                box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
+                /* 6px - 12px */
+                border: clamp(0.375em, 1vw, 0.75em) solid #fff;
+                right: 0;
+                bottom: 0;
+            }
+        }
+
         &__desc {
             font-size: var(--topperFontSize);
             line-height: 1.2em;
@@ -119,7 +136,7 @@
             line-height: 1.2em;
             text-align: left;
             max-width: 50rem;
-            margin: 0 auto 1.6rem;
+            margin: 0 auto 2.6rem;
             color: var(--headerColor);
             position: relative;
         }
