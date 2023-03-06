@@ -12,7 +12,7 @@
   .about__right { margin: auto; max-width: 34rem; }
   .about__owner { display: -webkit-box; display: -ms-flexbox; display: flex; }
   .about__owner-info { margin: auto 2rem 0 0; }
-  .about__owner-image { border-radius: 1.5em; background-color: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px; /* 6px - 12px */ border: clamp(0.375em, 1vw, 0.75em) solid #fff; right: 0; bottom: 0; }
+  .about__owner-image { border-radius: 1.5em; background-color: #fff; -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px; box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px; border: clamp(0.2em, 0.8vw, 0.4em) solid #fff; right: 0; bottom: 0; }
   .about__desc { font-size: var(--topperFontSize); line-height: 1.2em; text-align: left; letter-spacing: 0.1em; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; display: block; }
   .about__email { font-size: clamp(0.8125rem, 1.6vw, 0.9rem); line-height: 1.2em; text-align: left; letter-spacing: 0.05em; width: auto; font-weight: 700; color: var(--primary); margin-bottom: 0.5rem; display: block; text-decoration: none; position: relative; }
   .about__email:before { /* Animated underline */ content: ''; width: 0%; height: 2px; /* current color of the parent */ background: currentColor; opacity: 1; position: absolute; display: block; bottom: -0.125rem; left: 0; -webkit-transition: width 0.3s; transition: width 0.3s; }

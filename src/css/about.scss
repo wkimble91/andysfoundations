@@ -77,8 +77,7 @@
                 border-radius: 1.5em;
                 background-color: #fff;
                 box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 20px;
-                /* 6px - 12px */
-                border: clamp(0.375em, 1vw, 0.75em) solid #fff;
+                border: clamp(0.2em, 0.8vw, 0.4em) solid #fff;
                 right: 0;
                 bottom: 0;
             }
