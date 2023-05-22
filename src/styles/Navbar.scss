@@ -1,3 +1,4 @@
+/* Mobile - 360px */
 .navbar {
   height: 6.25rem;
   width: 100%;
@@ -82,6 +83,7 @@
   }
 }
 
+/* Tablet - 768px */
 @media (max-width: 768px) {
   .nav-elements ul li:not(:last-child) {
     margin-right: 30px;
@@ -142,6 +144,10 @@
     }
   }
 }
+
+/*-- -------------------------- -->
+<---      Hamburger  Menu       -->
+<--- -------------------------- -*/
 
 // Hamburger Menu Default State
 .hamburger-menu {
