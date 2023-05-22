@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { NavLink } from 'react-router-dom';
-import logo from '../assets/images/logo-dark-m.webp';
+import logodark from '../assets/images/logo-dark-m.webp';
+import logolight from '../assets/images/logo-light-m.webp';
 import '../styles/Navbar.css';
 const Navbar = () => {
   const [showNavbar, setShowNavbar] = useState(false);
@@ -10,7 +11,7 @@ const Navbar = () => {
   };
 
   return (
-    <nav className='navbar'>
+    <nav id='navigation' className='navbar'>
       <div className='navbar-background-color' aria-hidden='true'></div>
       <div className='navbar-container'>
         <NavLink
@@ -19,9 +20,16 @@ const Navbar = () => {
           to='/'
         >
           <img
-            className='logo-img'
+            className='logo-img logo-img-dark'
             aria-hidden='true'
-            src={logo}
+            src={logodark}
+            decoding='async'
+            alt='logo'
+          />
+          <img
+            className='logo-img logo-img-light'
+            aria-hidden='true'
+            src={logolight}
             decoding='async'
             alt='logo'
           />

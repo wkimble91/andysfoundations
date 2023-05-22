@@ -1,11 +1,15 @@
 /*-- -------------------------- -->
+<---         Variables          -->
+<--- -------------------------- -*/
+:root { --primary: #5c8001; --primaryShade: #7cb518; --primaryDark: #496501; --bodyTextColor: #4e4b66; --bodyTextColorWhite: #fafbfc; --headerColor: #1a1a1a; --buttonRadius: 3px; --topperFontSize: clamp(0.8rem, 1.6vw, 1rem); --headerFontSize: clamp(2.5rem, 4.5vw, 3.05rem); /* 60px - 100px top and bottom */ --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem; }
+
+/*-- -------------------------- -->
 <---        Core Styles         -->
+<---        And Resets          -->
 <--- -------------------------- -*/
 /* Mobile */
-@media only screen and (min-width: 0em) { :root { --primary: #5c8001; --primaryShade: #7cb518; --primaryDark: #496501; --bodyTextColor: #4e4b66; --bodyTextColorWhite: #fafbfc; --headerColor: #1a1a1a; --buttonRadius: 3px; --topperFontSize: clamp(0.8rem, 1.6vw, 1rem); --headerFontSize: clamp(2.5rem, 4.5vw, 3.05rem); /* 60px - 100px top and bottom */ --sectionPadding: clamp(3.75em, 7.82vw, 6.25em) 1rem; }
-  body, html { margin: 0; padding: 0; font-size: 100%; font-family: 'Open Sans', sans-serif; color: var(--bodyTextColor); overflow-x: hidden; }
+@media only screen and (min-width: 0em) { body, html { margin: 0; padding: 0; font-size: 100%; font-family: 'Open Sans', sans-serif; color: var(--bodyTextColor); overflow-x: hidden; }
   *, *:before, *:after { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
-  body { -webkit-transition: background-color 0.3s; transition: background-color 0.3s; }
   .container { position: relative; width: 92%; margin: auto; }
   h1, h2, h3, h4, h5, h6 { margin: 0; color: var(--headerColor); }
   p, li, a { font-size: 1.2rem; line-height: 1.5em; margin: 0; }
