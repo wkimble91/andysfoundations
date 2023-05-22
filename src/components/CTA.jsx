@@ -1,4 +1,5 @@
 import React from 'react';
+import { NavLink } from 'react-router-dom';
 import '../styles/CTA.css';
 import landing from '../assets/images/landing.jpg';
 import landingmobile from '../assets/images/landing-m.webp';
@@ -15,9 +16,9 @@ const CTA = () => {
           <br />
           Get started on the right foot and reach out!
         </p>
-        <a href='/contact' className='buttonSolid'>
+        <NavLink to='/contact' className='buttonSolid'>
           Get an Estimate Now
-        </a>
+        </NavLink>
       </div>
       <picture className='cta__background'>
         <source media='(max-width: 600px)' srcSet={landingmobile} />

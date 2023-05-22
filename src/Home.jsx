@@ -1,4 +1,6 @@
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
+// Components
 import Navbar from './components/Navbar';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
@@ -22,6 +24,10 @@ import bricks from './assets/images/bricks.jpg';
 import bricksmobile from './assets/images/bricks-m.webp';
 
 export default class Home extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <>
@@ -37,9 +43,9 @@ export default class Home extends Component {
               <p className='hero__text'>
                 Proudly Serving Kansas City Metro For Decades
               </p>
-              <a href='' className='hero__buttonSolid'>
+              <Link to='/contact' className='hero__buttonSolid'>
                 Contact Us
-              </a>
+              </Link>
             </div>
           </div>
 
@@ -164,9 +170,9 @@ export default class Home extends Component {
                 project done. To see what we can do for you and your property,
                 call or email us today.
               </p>
-              <a href='/about' className='buttonSolid'>
+              <Link to='/about' className='buttonSolid'>
                 About Our Team
-              </a>
+              </Link>
             </div>
           </div>
         </section>
@@ -226,9 +232,9 @@ export default class Home extends Component {
                 smaller Mom and Pop store, we will provide you with quality
                 workmanship that is on-time and to your satisfaction.
               </p>
-              <a href='' className='buttonSolid'>
+              <Link to='/contact/#' className='buttonSolid'>
                 Get an estimate
-              </a>
+              </Link>
             </div>
           </div>
         </section>

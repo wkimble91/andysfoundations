@@ -12,6 +12,10 @@ import workersmobile from './assets/images/workers-m.webp';
 import andy from './assets/images/andy.jpg';
 
 export default class About extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
+
   render() {
     return (
       <>

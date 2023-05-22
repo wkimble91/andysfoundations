@@ -8,6 +8,9 @@ import skyscraper from './assets/images/skyscraper.jpg';
 import skyscrapermobile from './assets/images/skyscraper-m.jpg';
 
 export default class About extends Component {
+  componentDidMount() {
+    window.scrollTo(0, 0);
+  }
   render() {
     return (
       <>
