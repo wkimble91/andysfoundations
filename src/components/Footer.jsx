@@ -1,4 +1,5 @@
 import React from 'react';
+import '../styles/Footer.css';
 import logomobile from '../assets/images/logo-light-m.webp';
 import logo from '../assets/images/logo-light.webp';
 
@@ -37,10 +38,10 @@ const Footer = () => {
                 <h2>Office Hours:</h2>
               </li>
               <li>
-                <b>Mon - Fri</b>: 8:00a - 5:00p
+                <b>Mon - Fri:</b>8:00a - 5:00p
               </li>
               <li>
-                <b>Sat - Sun</b>: Closed
+                <b>Sat - Sun:</b>Closed
               </li>
             </ul>
             <ul>
@@ -59,7 +60,7 @@ const Footer = () => {
                 <a href='tel:913-962-6644'>(913) 962-6644</a>
               </li>
               <li>
-                <b>E:</b>
+                <b>E: </b>
                 <a href='mailto:debra@downeyfoundation.com'>
                   debra@downeyfoundation.com
                 </a>
