@@ -1,18 +1,15 @@
 # Andy's Foundations
 ==================================================
 
- Local construction companies website, built on [SCSS], [JS], and [Eleventy] for future dynamic blog posts.
+ Local construction companies website, built on [SCSS] and [React.js].
 
 [SCSS]: https://sass-lang.com/documentation/syntax
-[JS]: https://www.javascript.com/
-[Eleventy]: https://www.11ty.dev/
+[React.js]: https://react.dev/
 
 ## Getting Started
 
 First, run the development server:
 
 ```bash
-npm start
+npm start dev
 ```
-
-Open [http://localhost:8080](http://localhost:8080) with your browser to see the site.
