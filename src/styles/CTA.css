@@ -16,5 +16,3 @@
   .cta__title { font-size: 3rem; }
   .cta__background { width: 90.0625%; left: 50%; -webkit-transform: translateX(-50%); transform: translateX(-50%); }
   .cta__background:before { content: ''; position: absolute; display: block; height: 100%; width: 100%; background: #000; opacity: 0.7; top: 0; left: 0; z-index: 1; } }
-/* Dark Mode */
-@media only screen and (min-width: 0em) { body.dark-mode #cta:after { display: none; } }

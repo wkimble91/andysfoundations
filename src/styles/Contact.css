@@ -50,12 +50,3 @@
   #contact #contact__form .contact__label-upload { max-width: 100%; }
   #contact #contact__form .contact__label-message { max-width: 100%; }
   #contact .contact__right-section { height: 36rem; } }
-/* Dark Mode */
-@media only screen and (min-width: 0em) { body.dark-mode #contact .contact__text, body.dark-mode #contact .contact__title { color: var(--bodyTextColorWhite); }
-  body.dark-mode #contact #contact__form label, body.dark-mode #contact #contact__form input, body.dark-mode #contact #contact__form textarea { background-color: transparent; color: var(--bodyTextColorWhite); }
-  body.dark-mode #contact #contact__form label::-webkit-input-placeholder, body.dark-mode #contact #contact__form input::-webkit-input-placeholder, body.dark-mode #contact #contact__form textarea::-webkit-input-placeholder { /* lighten up the color of the text by 40%*/ -webkit-filter: brightness(1.4); filter: brightness(1.4); }
-  body.dark-mode #contact #contact__form label:-ms-input-placeholder, body.dark-mode #contact #contact__form input:-ms-input-placeholder, body.dark-mode #contact #contact__form textarea:-ms-input-placeholder { /* lighten up the color of the text by 40%*/ filter: brightness(1.4); }
-  body.dark-mode #contact #contact__form label::-ms-input-placeholder, body.dark-mode #contact #contact__form input::-ms-input-placeholder, body.dark-mode #contact #contact__form textarea::-ms-input-placeholder { /* lighten up the color of the text by 40%*/ filter: brightness(1.4); }
-  body.dark-mode #contact #contact__form label::placeholder, body.dark-mode #contact #contact__form input::placeholder, body.dark-mode #contact #contact__form textarea::placeholder { /* lighten up the color of the text by 40%*/ -webkit-filter: brightness(1.4); filter: brightness(1.4); }
-  body.dark-mode #contact .contact__bg-picture { background-color: #000; }
-  body.dark-mode #contact .contact__bg-picture img { /* lets parent background-color bleed through and darken it */ opacity: 0.5; } }

@@ -362,38 +362,3 @@
     }
   }
 }
-
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode {
-    #contact {
-      .contact__text,
-      .contact__title {
-        color: var(--bodyTextColorWhite);
-      }
-
-      #contact__form {
-        label,
-        input,
-        textarea {
-          background-color: transparent;
-          color: var(--bodyTextColorWhite);
-
-          &::placeholder {
-            /* lighten up the color of the text by 40%*/
-            filter: brightness(1.4);
-          }
-        }
-      }
-
-      .contact__bg-picture {
-        background-color: #000;
-
-        img {
-          /* lets parent background-color bleed through and darken it */
-          opacity: 0.5;
-        }
-      }
-    }
-  }
-}

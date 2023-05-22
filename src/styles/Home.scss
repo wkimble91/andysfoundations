@@ -473,51 +473,6 @@
   }
 }
 
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode {
-    .sbsTop {
-      &__left {
-        &:before,
-        &:after {
-          background: var(--accent);
-        }
-      }
-
-      &__picture2 {
-        background-color: var(--dark);
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-      }
-
-      &__topper {
-        color: var(--primaryLight);
-      }
-
-      &__title,
-      &__text,
-      &__h3,
-      &__flex-p,
-      &__name {
-        color: var(--bodyTextColorWhite);
-      }
-
-      &__flex-group {
-        background-color: var(--accent);
-      }
-
-      &__job {
-        color: var(--bodyTextColorWhite);
-        opacity: 0.8;
-      }
-
-      &__quote-icon {
-        opacity: 0.2;
-      }
-    }
-  }
-}
-
 /*-- -------------------------- -->
 <---     Bottom Side By Side    -->
 <--- -------------------------- -*/
@@ -698,47 +653,6 @@
 
     &__right {
       margin: 0;
-    }
-  }
-}
-
-/* Dark Mode */
-@media only screen and (min-width: 0em) {
-  body.dark-mode {
-    .sbsBot {
-      &__left {
-        &:before,
-        &:after {
-          background: var(--accent);
-        }
-      }
-
-      &__picture2 {
-        background-color: var(--dark);
-        /* 6px - 12px */
-        border: clamp(0.375em, 1.5vw, 0.75em) solid var(--dark);
-      }
-
-      &__topper {
-        color: var(--primaryLight);
-      }
-
-      &__title,
-      &__text,
-      &__h3,
-      &__flex-p,
-      &__name {
-        color: var(--bodyTextColorWhite);
-      }
-
-      &__flex-group {
-        background-color: var(--accent);
-      }
-
-      &__job {
-        color: var(--bodyTextColorWhite);
-        opacity: 0.8;
-      }
     }
   }
 }
