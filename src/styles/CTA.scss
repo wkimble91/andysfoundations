@@ -1,4 +1,4 @@
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .cta {
     position: relative;
@@ -61,15 +61,15 @@
   }
 }
 
-/* Small Desktop */
+/* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) {
   .cta {
     padding: 10.5rem 0;
   }
 }
 
-/* Large Desktop */
-@media only screen and (min-width: 1300px) {
+/* Small Desktop - 1300px */
+@media only screen and (min-width: 81.25em) {
   .cta {
     position: relative;
     margin-top: 6.25rem;

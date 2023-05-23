@@ -1,4 +1,4 @@
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0em) { .footer { background: #1c1c1c; padding: 3.2rem 0 1.25rem; font-size: clamp(1.2em, 4vw, 2em); }
   .footer__left-section { margin: auto; margin-bottom: 3.2rem; text-align: center; }
   .footer__left-section--logo { display: inline-block; margin: auto; width: auto; height: 6.25em; margin-bottom: 3.2em; text-align: center; }

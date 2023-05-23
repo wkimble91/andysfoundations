@@ -23,7 +23,6 @@
 <---        And Resets          -->
 <--- -------------------------- -*/
 
-/* Mobile */
 @media only screen and (min-width: 0em) {
   body,
   html {
@@ -115,7 +114,7 @@
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
 
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   #int-hero {
     display: flex;
@@ -182,7 +181,7 @@
   }
 }
 
-/* Tablet */
+/* Tablet - 768px */
 @media only screen and (min-width: 48em) {
   #int-hero {
     font-size: 100%;
@@ -193,7 +192,7 @@
   }
 }
 
-/* Small Desktop */
+/* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) {
   #int-hero {
     min-height: 35rem;

@@ -7,7 +7,6 @@
 <---        Core Styles         -->
 <---        And Resets          -->
 <--- -------------------------- -*/
-/* Mobile */
 @media only screen and (min-width: 0em) { body, html { margin: 0; padding: 0; font-size: 100%; font-family: 'Open Sans', sans-serif; color: var(--bodyTextColor); overflow-x: hidden; }
   *, *:before, *:after { margin: 0; padding: 0; -webkit-box-sizing: border-box; box-sizing: border-box; }
   .container { position: relative; width: 92%; margin: auto; }
@@ -25,15 +24,15 @@
 /*-- -------------------------- -->
 <---   Interior Page Header     -->
 <--- -------------------------- -*/
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0em) { #int-hero { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; position: relative; z-index: 1; min-height: 35vh; padding-top: 3.2rem; }
   #int-hero:before { content: ''; position: absolute; display: block; height: 100%; width: 100%; background: #000; opacity: 0.7; top: 0; left: 0; z-index: -1; }
   #int-hero picture { position: absolute; top: 0; left: 0; height: 100%; width: 100%; z-index: -2; }
   #int-hero picture img { position: absolute; top: 0; left: 0; height: 100%; width: 100%; -o-object-fit: cover; object-fit: cover; }
   #int-hero h1 { color: #fff; font-size: 2.2rem; text-align: center; margin: 0 auto; position: relative; width: 96%; max-width: 31.25rem; margin-top: 4.4rem; margin-bottom: 1.8rem; }
   #int-hero p { color: #fff; text-align: center; max-width: 25rem; margin: auto; margin-bottom: 1.8rem; display: block; width: 96%; } }
-/* Tablet */
+/* Tablet - 768px */
 @media only screen and (min-width: 48em) { #int-hero { font-size: 100%; }
   #int-hero h1 { font-size: 4rem; } }
-/* Small Desktop */
+/* Small Desktop - 1024px */
 @media only screen and (min-width: 64em) { #int-hero { min-height: 35rem; height: auto; padding-top: 11.25rem; -webkit-padding-after: 6.25rem; padding-block-end: 6.25rem; background-attachment: fixed; font-size: inherit; } }
