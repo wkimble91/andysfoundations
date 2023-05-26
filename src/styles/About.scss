@@ -17,7 +17,6 @@
     &__left {
       /* scaling the font size with the view width */
       font-size: calc(min(2.31vw, 0.7em));
-      /* using ems so we can use font size to scale the whole section */
       width: 39.43em;
       height: 39.75em;
       position: relative;
@@ -26,17 +25,16 @@
 
     &__picture {
       border-radius: 1.5em;
-      /* clips img tag corners */
       overflow: hidden;
       position: absolute;
       display: block;
+
       img {
         position: absolute;
         top: 0;
         left: 0;
         height: 100%;
         width: 100%;
-        /* makes image act like a background image */
         object-fit: cover;
       }
     }
@@ -109,7 +107,6 @@
         content: '';
         width: 0%;
         height: 2px;
-        /* current color of the parent */
         background: currentColor;
         opacity: 1;
         position: absolute;
