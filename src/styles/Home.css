@@ -2,11 +2,11 @@
 <---      Above the fold        -->
 <--- -------------------------- -*/
 /* Mobile - 360px */
-@media only screen and (min-width: 0em) { .hero { font-family: 'Roboto', 'Arial', sans-serif; /* Centers button */ text-align: center; /* changes on tablet */ padding: 0 1rem; padding-bottom: 6.25rem; position: relative; z-index: 1; /* prevents overflow from the lines extending past the screen width */ overflow: hidden; }
+@media only screen and (min-width: 0em) { .hero { font-family: 'Roboto', 'Arial', sans-serif; text-align: center; padding: 0 1rem; padding-bottom: 6.25rem; position: relative; z-index: 1; overflow: hidden; }
   .hero__picture { /* Background Image */ width: 100%; height: 100%; display: block; position: absolute; top: 0; left: 0; z-index: -2; }
   .hero__picture:before { /* Black Color Overlay */ content: ''; width: 100%; height: 100%; background: #000; opacity: 0.7; position: absolute; display: block; top: 0; left: 0; z-index: 1; /* prevents the cursor from interacting with it */ pointer-events: none; }
-  .hero__picture img { position: absolute; top: 0; left: 0; height: 100%; width: 100%; /* Makes image act like a background-image */ -o-object-fit: cover; object-fit: cover; }
-  .hero__container { width: 100%; max-width: 80em; /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */ /* 144px - 280px - leaving extra space for the navigation */ /* changes on tablet */ padding: clamp(9em, 25.95vw, 17.5em) 0; margin: auto; position: relative; }
+  .hero__picture img { position: absolute; top: 0; left: 0; height: 100%; width: 100%; -o-object-fit: cover; object-fit: cover; }
+  .hero__container { width: 100%; max-width: 80em; /* put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */ /* 144px - 280px - leaving extra space for the navigation */ padding: clamp(9em, 25.95vw, 17.5em) 0; margin: auto; position: relative; }
   .hero__flexGroup { /* 60px - 220px */ margin-bottom: clamp(3.75em, 15.5vw, 13.75em); margin: auto; width: 80vw; /* 464px - 562px */ max-width: clamp(29em, 60vw, 35.125em); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -ms-flex-wrap: wrap; flex-wrap: wrap; -webkit-box-sizing: border-box; box-sizing: border-box; }
   .hero__topper { /* 13px - 16px */ font-size: clamp(0.8rem, 1.6vw, 1rem); line-height: 1.2em; text-transform: uppercase; text-align: center; letter-spacing: 0.1em; font-weight: 700; color: var(--primary); margin-bottom: 1rem; display: block; }
   .hero__title { /* 39px - 61px */ font-size: clamp(2.4rem, 6.4vw, 3.8rem); font-weight: 900; line-height: 1.2em; text-align: center; width: 100%; /* 32px - 40px */ margin: 0 auto clamp(2rem, 4vw, 2.5rem) 0; color: var(--bodyTextColorWhite); position: relative; }
@@ -24,7 +24,7 @@
 <--- -------------------------- -->
 <---          Services          -->
 <--- -------------------------- -*/
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0em) { .services { border-radius: 0.3em; margin: auto; margin-top: -10.5em; position: relative; z-index: 100; background: #fff; width: 90%; max-width: 82.5em; padding: 3.125em 1.25em; border-top: 0.375em solid var(--primary); -webkit-box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05); box-shadow: 0px 20px 40px rgba(0, 0, 0, 0.05); margin-bottom: 3.125em; }
   .services .services__card { display: block; width: 100%; max-width: 22.3em; margin: auto; margin-bottom: 3.125em; }
   .services .services__card:last-of-type { margin-bottom: 0; }
@@ -37,7 +37,7 @@
   .services .services__card { margin: 0; max-width: 20.3em; }
   .services .services__card picture { background: var(--primary); width: 5.5em; height: 5.5em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: auto; margin-bottom: 1.45em; border-radius: 50%; }
   .services .services__card picture img { width: 3em; height: 3em; } }
-/* Large Desktop */
+/* Desktop - 1300px */
 @media only screen and (min-width: 1300px) { .services { padding: 3.125em 5em; }
   .services .services__card { max-width: 22.3em; } }
 /*-- -------------------------- -->

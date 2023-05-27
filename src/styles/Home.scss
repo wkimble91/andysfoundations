@@ -6,14 +6,11 @@
 @media only screen and (min-width: 0em) {
   .hero {
     font-family: 'Roboto', 'Arial', sans-serif;
-    /* Centers button */
     text-align: center;
-    /* changes on tablet */
     padding: 0 1rem;
     padding-bottom: 6.25rem;
     position: relative;
     z-index: 1;
-    /* prevents overflow from the lines extending past the screen width */
     overflow: hidden;
 
     &__picture {
@@ -48,7 +45,6 @@
         left: 0;
         height: 100%;
         width: 100%;
-        /* Makes image act like a background-image */
         object-fit: cover;
       }
     }
@@ -56,9 +52,8 @@
     &__container {
       width: 100%;
       max-width: 80em;
-      /* we put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
+      /* put the padding top and bottom on the container instead of #Hero so the pseudo element lines go to the top and bottom of the section */
       /* 144px - 280px - leaving extra space for the navigation */
-      /* changes on tablet */
       padding: clamp(9em, 25.95vw, 17.5em) 0;
       margin: auto;
       position: relative;
@@ -182,7 +177,7 @@
 <---          Services          -->
 <--- -------------------------- -*/
 
-/* Mobile */
+/* Mobile - 360px */
 @media only screen and (min-width: 0em) {
   .services {
     border-radius: 0.3em;
@@ -277,7 +272,7 @@
   }
 }
 
-/* Large Desktop */
+/* Desktop - 1300px */
 @media only screen and (min-width: 1300px) {
   .services {
     padding: 3.125em 5em;
