@@ -1,8 +1,11 @@
 import React, { Component } from 'react';
+//Components
 import Navbar from './components/Navbar';
 import CTA from './components/CTA';
 import Footer from './components/Footer';
+//Styles
 import './styles/About.css';
+//Images
 import hero from './assets/images/hero.jpg';
 import heromobile from './assets/images/hero-m.jpg';
 import foundation from './assets/images/foundation.jpg';
@@ -50,8 +53,7 @@ export default class About extends Component {
             <div className='about__left'>
               <picture
                 className='about__picture about__picture-1'
-                aria-hidden='true'
-              >
+                aria-hidden='true'>
                 <source media='(max-width: 600px)' srcset={foundationmobile} />
                 <source media='(min-width: 601px)' srcset={foundation} />
                 <img
@@ -65,8 +67,7 @@ export default class About extends Component {
               </picture>
               <picture
                 className='about__picture about__picture-2'
-                aria-hidden='true'
-              >
+                aria-hidden='true'>
                 <source media='(max-width: 600px)' srcset={workersmobile} />
                 <source media='(min-width: 601px)' srcset={workers} />
                 <img
@@ -120,8 +121,7 @@ export default class About extends Component {
               <span className='about__desc'>Office Manager</span>
               <a
                 href='mailto:debra@downeyfoundation.com'
-                className='about__email'
-              >
+                className='about__email'>
                 debra@downeyfoundation.com
               </a>
               <p className='about__text'>

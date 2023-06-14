@@ -1,7 +1,10 @@
 import React, { Component } from 'react';
+// Components
 import Navbar from './components/Navbar';
 import Footer from './components/Footer';
+// Styles
 import './styles/Contact.css';
+// Images
 import hero from './assets/images/hero.jpg';
 import heromobile from './assets/images/hero-m.jpg';
 import skyscraper from './assets/images/skyscraper.jpg';
@@ -38,9 +41,7 @@ export default class About extends Component {
               id='contact__form'
               name='Contact Form'
               method='post'
-              action='https://formsubmit.co/debra@downeyfoundation.com'
-              enctype='multipart/form-data'
-            >
+              data-netlify='true'>
               <div className='contact__content'>
                 <span className='contact__topper'>Contact</span>
                 <h2 className='contact__title'>Get in Touch</h2>
@@ -107,8 +108,7 @@ export default class About extends Component {
                   required
                   name='message'
                   id='message'
-                  placeholder='Write message...'
-                ></textarea>
+                  placeholder='Write message...'></textarea>
               </label>
               <button className='contact__button-solid' type='submit'>
                 Submit Message
@@ -119,8 +119,7 @@ export default class About extends Component {
               <span className='contact__header'>Email</span>
               <a
                 className='contact__link'
-                href='mailto:debra@downeyfoundation.com'
-              >
+                href='mailto:debra@downeyfoundation.com'>
                 debra@downeyfoundation.com
               </a>
               {/* <!--Phone--> */}
@@ -133,8 +132,7 @@ export default class About extends Component {
               <a
                 className='contact__link'
                 href='https://goo.gl/maps/MfozunTD8VddXTCX6'
-                target='_blank'
-              >
+                target='_blank'>
                 11101 Johnson Dr, Ste 50, Shawnee, KS 66203
               </a>
 
