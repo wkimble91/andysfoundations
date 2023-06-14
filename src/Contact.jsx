@@ -41,6 +41,7 @@ export default class About extends Component {
               id='contact__form'
               name='Contact Form'
               method='POST'
+              enctype='multipart/form-data'
               data-netlify='true'>
               <div className='contact__content'>
                 <span className='contact__topper'>Contact</span>
