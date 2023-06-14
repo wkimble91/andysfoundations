@@ -40,7 +40,7 @@ export default class About extends Component {
             <form
               id='contact__form'
               name='Contact Form'
-              method='post'
+              method='POST'
               data-netlify='true'>
               <div className='contact__content'>
                 <span className='contact__topper'>Contact</span>
@@ -90,7 +90,6 @@ export default class About extends Component {
                   placeholder='How did you find us?'
                 />
               </label>
-              {/* <!-- Upload Field --> */}
               <label className='contact__label-upload'>
                 Upload plans
                 <input
