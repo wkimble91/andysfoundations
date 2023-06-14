@@ -39,7 +39,7 @@ export default class About extends Component {
           <div className='contact__container'>
             <form
               id='contact__form'
-              name='Contact'
+              name='contact'
               method='POST'
               enctype='multipart/form-data'
               data-netlify='true'>
@@ -48,7 +48,7 @@ export default class About extends Component {
                 <span className='contact__topper'>Contact</span>
                 <h2 className='contact__title'>Get in Touch</h2>
                 <p className='contact__text'>
-                  Fill out the form and send us your plans. We'll get back to
+                  Fill out the form and send us your plans. We will get back to
                   you as soon as we are able. Or use the information to the
                   right to reach out directly.
                 </p>
@@ -93,7 +93,7 @@ export default class About extends Component {
                   type='text'
                   id='find'
                   name='find-us'
-                  placeholder='How did you find us?'
+                  placeholder='How did you find us'
                 />
               </label>
               <label className='contact__label-upload' for='attachment'>
