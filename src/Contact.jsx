@@ -39,7 +39,7 @@ export default class About extends Component {
           <div className='contact__container'>
             <form
               id='contact__form'
-              name='Contact Form'
+              name='Contact'
               method='POST'
               enctype='multipart/form-data'
               data-netlify='true'>
