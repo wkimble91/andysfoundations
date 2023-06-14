@@ -43,6 +43,7 @@ export default class About extends Component {
               method='POST'
               enctype='multipart/form-data'
               data-netlify='true'>
+              <input type='hidden' name='form_type' value='Contact' />
               <div className='contact__content'>
                 <span className='contact__topper'>Contact</span>
                 <h2 className='contact__title'>Get in Touch</h2>
@@ -52,17 +53,19 @@ export default class About extends Component {
                   right to reach out directly.
                 </p>
               </div>
-              <label>
+              <label for='name'>
                 Name
                 <input
                   required
                   type='text'
                   id='name'
                   name='name'
+                  minlength='2'
+                  autocomplete='name'
                   placeholder='Name'
                 />
               </label>
-              <label>
+              <label for='email'>
                 Email
                 <input
                   required
@@ -70,9 +73,10 @@ export default class About extends Component {
                   id='email'
                   name='email'
                   placeholder='Email'
+                  autocomplete='email'
                 />
               </label>
-              <label>
+              <label for='phone'>
                 Phone
                 <input
                   required
@@ -80,9 +84,10 @@ export default class About extends Component {
                   id='phone'
                   name='phone'
                   placeholder='Phone'
+                  autocomplete='tel'
                 />
               </label>
-              <label>
+              <label for='find-us'>
                 How Did You Find Us
                 <input
                   type='text'
@@ -91,7 +96,7 @@ export default class About extends Component {
                   placeholder='How did you find us?'
                 />
               </label>
-              <label className='contact__label-upload'>
+              <label className='contact__label-upload' for='attachment'>
                 Upload plans
                 <input
                   type='file'
@@ -102,7 +107,7 @@ export default class About extends Component {
                   multiple
                 />
               </label>
-              <label className='contact__label-message'>
+              <label className='contact__label-message' for='message'>
                 Message
                 <textarea
                   required
