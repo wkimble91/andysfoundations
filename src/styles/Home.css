@@ -31,7 +31,7 @@
   .services .services__card picture { background: var(--primary); width: 4em; height: 4em; display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: center; -ms-flex-pack: center; justify-content: center; -webkit-box-align: center; -ms-flex-align: center; align-items: center; margin: auto; margin-bottom: 1.45em; border-radius: 50%; }
   .services .services__card picture img { width: 2em; height: 2em; }
   .services .services__card h2 { text-align: center; font-size: 1.6em; line-height: 1.35em; font-weight: 700; color: #1a1a1a; margin-bottom: 0.65em; }
-  .services .services__card p { text-align: center; font-size: 1em; line-height: 1.3em; width: 100%; opacity: 0.7; } }
+  .services .services__card p { text-align: center; font-size: 1em; line-height: 1.3em; width: 100%; opacity: 0.8; } }
 /* Inbetween */
 @media only screen and (min-width: 768px) { .services { font-size: calc(min(1.8vw, 1em)); display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-pack: justify; -ms-flex-pack: justify; justify-content: space-between; -webkit-box-align: start; -ms-flex-align: start; align-items: flex-start; width: 98%; }
   .services .services__card { margin: 0; max-width: 20.3em; }
