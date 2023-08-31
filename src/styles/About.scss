@@ -68,6 +68,7 @@
       &-info {
         margin: auto 2rem 0 0;
       }
+
       &-image {
         border-radius: 1.5em;
         background-color: #fff;
@@ -140,14 +141,10 @@
       text-align: left;
       width: 100%;
       max-width: 46.8rem;
-      margin: 1rem auto 0;
-      margin-bottom: 1rem;
+      margin: 1rem auto 2rem;
       color: var(--bodyTextColor);
       text-indent: 1rem;
 
-      &:last-of-type {
-        margin-bottom: 2rem;
-      }
     }
 
     &__flex-group {
