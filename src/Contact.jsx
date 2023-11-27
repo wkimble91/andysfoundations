@@ -88,7 +88,7 @@ export default class About extends Component {
                 />
               </label>
               <label for='find-us'>
-                How Did You Find Us
+                How did you find us?
                 <input
                   type='text'
                   id='find'
@@ -97,7 +97,7 @@ export default class About extends Component {
                 />
               </label>
               <label className='contact__label-upload' for='attachment'>
-                Upload plans
+                Upload plans (optional)
                 <input
                   type='file'
                   name='attachment'
